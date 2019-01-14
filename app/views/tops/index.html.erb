@@ -3,6 +3,9 @@
     <%= image_tag 'top.png'%>
   </div>
   <div class=top-button>
-    <%= link_to 'はじめる' , question_path(@questions.first) %>
+    <%= link_to 'はじめる' , new_user_registration_path %>
+  </div>
+  <div class="signin-button">
+    <%= link_to 'ログイン' , new_user_session_path %>
   </div>
 </div>

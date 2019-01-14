@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Q<%= @question.question_num %></h1>
+  <p><%= @question.question_content %></p>
+  <div class=top-button>
+    <%= link_to '前へ' , question_path(@question.previous) if @question.previous %>
+    <%= link_to '次へ' , question_path(@question.next) if @question.next %>
+  </div>
+</div>

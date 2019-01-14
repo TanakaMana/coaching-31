@@ -1,29 +1,98 @@
 header {
-  height: 37px;
+  padding-top: 7px;
+  background-color: #123247;
+  height: 44px;
   .header-content {
-    margin-top: 7px;
     margin-right: 20px;
     margin-left: auto;
     display: flex;
     width: 200px;
     .header-button {
       width: 105px;
-      border: solid 1px #123247;
+      border: solid 1px #ffffff;
       border-radius: 5px;
       text-align: center;
       height: 30px;
       line-height: 30px;
       a {
-        color: #123247;
+        color: #ffffff;
         text-decoration: none;
       }
     }
   }
 }
 
+.dark-button {
+  margin: 0 auto;
+  margin-top: 25px;
+  height: 36px;
+  width: 171px;
+  background: #123247;
+  border: 1px solid #123247;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 36px;
+  text-decoration: none;
+  a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+  }
+}
+
 #background {
-  background-color: #EFAF89;
   height: 100vh;
+  .container {
+    margin-top: 50px;
+    background-color: #f0f0f0;
+    padding: 50px;
+    h2 {
+      padding: 0.4em 0.5em;
+      color: #494949;
+      background: #f4f4f4;
+      border-left: solid 5px #7db4e6;
+      border-bottom: solid 3px #d7d7d7;
+      font-size: 18px;
+    }
+    .graph {
+      img {
+        width: 100%;
+      }
+    }
+    .profile {
+      width: 100%;
+      display: flex;
+      margin-bottom: 45px;
+      .user-image {
+        width: 100%;
+        img {
+          border-radius: 50%;
+          width:  180px;
+          height: 180px;
+        }
+      }
+      .user-text {
+        width: 100%;
+        padding: 15px;
+        p.name {
+          font-weight: bold;
+          font-size: 18px;
+        }
+        p.info {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .card {
+      border: solid 1px #d0d0d0;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    .time-graph {
+      margin-top: 30px;
+    }
+  }
 }
 
 .top-content {

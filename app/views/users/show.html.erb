@@ -1,5 +1,67 @@
+<% if user_signed_in? %>
+  <header>
+    <div class="header-content">
+      <div class="header-button" style="margin-right: 5px;">
+        <%= link_to 'マイレジュメ' , user_path(current_user.id) %>
+      </div>
+      <div class="header-button">
+        <%= link_to 'ログアウト' , destroy_user_session_path, method: "delete" %>
+      </div>
+    </div>
+  </header>
+<% end %>
 <div id="background">
   <div class="container">
-    <h1>レジュメのページ</h1>
+    <div class="col-md-6">
+      <div class="profile">
+        <div class="user-image">
+          <%= image_tag 'persona.jpg'%>
+        </div>
+        <div class="user-text">
+          <p class="name">高木 華子</p>
+          <p class="info">37歳</p>
+          <p class="info">キャビンアテンダント</p>
+        </div>
+      </div>
+      <div class="graph">
+        <%= image_tag 'triangle-chart.png'%>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h2>仕事</h2>
+      <div class="card">
+        <div class="card-body">
+          就活が嫌で、そんなに働きたくないなら、思考停止せず、働かなくても生きていける方法を考えればいいのに…
+          就活も仕事も、別に誰かから強制されてるわけじゃなくて、それは自分がやりたくてやってることなんだよ？
+        </div>
+      </div>
+      <h2>家庭</h2>
+      <div class="card">
+        <div class="card-body">
+          夢は19で結婚して子どもを産んで若いお母さんになることだった。
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          ジェフ・ベゾス、なぜ婚前契約を結んでなかったんだろうと思ったら、起業より結婚が先だったんですね。結婚して1年経った頃、妻に後押しされて起業した、と。まぁ、それな ら、不倫がバレて離婚されて財産取られてもしょうがない。笑
+        </div>
+      </div>
+      <h2>趣味</h2>
+      <div class="card">
+        <div class="card-body">
+          インスタに続きTwitterもほぼsumika垢作りました☺︎趣味合う方と沢山繋がりたいのでよろしくお願いします¨̮ )
+        </div>
+      </div>
+      <div class=dark-button>
+        <%= link_to 'もっと見る' , '' %>
+      </div>
+    </div>
+    <div class=col-md-12>
+      <div class="time-graph">
+        <div class="graph">
+          <%= image_tag 'time-graph.png'%>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

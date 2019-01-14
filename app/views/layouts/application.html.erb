@@ -10,20 +10,6 @@
   </head>
 
   <body>
-    <% if user_signed_in? %>
-      <header>
-        <div class="header-content">
-          <div class="header-button" style="margin-right: 5px;">
-            <%= link_to 'マイレジュメ' , user_path(current_user.id) %>
-          </div>
-          <div class="header-button">
-            <%= link_to 'ログアウト' , destroy_user_session_path, method: "delete" %>
-          </div>
-        </div>
-      </header>
-    <% end %>
-<!--     <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p> -->
     <%= yield %>
   </body>
 </html>

@@ -1,24 +1,8 @@
-# README
+# README 「コーチャ31」
+## 開発経緯
+2019年1月13-14日開催の「働く女性のしあわせをHACK！【WELL-BEING HACKATHON】」にて開発
+https://g-s.connpass.com/event/114381/?utm_campaign=event_reminder&utm_source=notifications&utm_medium=email&utm_content=detail_btn
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 技術
+- Ruby 2.4.0
+- Rails 5.1.6.1

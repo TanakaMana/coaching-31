@@ -3,6 +3,11 @@
   <p><%= @question.question_content %></p>
   <div class=top-button>
     <%= link_to '前へ', question_path(@question.previous) if @question.previous %>
-    <%= link_to @question.next ? '次へ' : '完了', @question.next ? question_path(@question.next) : user_path(current_user.id) %>
+    <% if @question.next.present? %>
+      <%= link_to '次へ', question_path(@question.next) if @question.next %>
+    <% else %>
+      <%= link_to '完了', 'http://18.222.175.78', target: ["_blank"] %>
+      <%= link_to 'レジュメを開く', user_path(current_user) %>
+    <% end %>
   </div>
 </div>
